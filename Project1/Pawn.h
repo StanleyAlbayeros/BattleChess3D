@@ -4,7 +4,8 @@ class Pawn :
 	public Pieces
 {
 public:
-	Pawn();
+	bool debugMode;
+	Pawn(bool debug);
 	~Pawn();
 };
 

@@ -4,7 +4,8 @@ class Bishop :
 	public Pieces
 {
 public:
-	Bishop();
+	bool debugMode;
+	Bishop(bool debug);
 	~Bishop();
 };
 
