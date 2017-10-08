@@ -1,9 +1,12 @@
 #include "Board.h"
 
 
-
-Board::Board()
+Board::Board(bool debug)
 {
+	this->debugMode = debug;
+	if (debugMode) {
+		cout << "Board created!" << endl;
+	}
 }
 
 

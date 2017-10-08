@@ -1,8 +1,14 @@
 #pragma once
+
+#include <iostream>
+
+using namespace std;
+
 class Board
 {
 public:
-	Board();
+	bool debugMode;
+	Board(bool debug);
 	~Board();
 };
 

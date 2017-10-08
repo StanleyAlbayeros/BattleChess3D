@@ -3,18 +3,22 @@
 #include "Player.h"
 #include "Pieces.h"
 #include "Position.h"
+#include <iostream>
+
+using namespace std;
 
 class Game
 {
 public:
-	Game();
+	Game(bool debug);
 	~Game();
+	bool debugMode;
 	Move* moveList;
 	int currentPlayer;
 	int turnCounter = 0;
 	Player players[2];
 	bool gameStatus = false; //False: in progress, True: completed
-	int isPlayerChecked[2]; //Posiciones 0= player 1, 1= player 2. Valores 0=no, 1= yes
+	int playerCheckedStatus[2]; //Posiciones 0= player 1, 1= player 2. Valores 0=no, 1= yes
 
 	void startGame();
 

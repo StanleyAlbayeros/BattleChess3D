@@ -1,9 +1,12 @@
 #include "Game.h"
 
 
-
-Game::Game()
+Game::Game(bool debug)
 {
+	this->debugMode = debug;
+	if (debugMode) {
+		cout << "Game created!" << endl;
+	}
 }
 
 

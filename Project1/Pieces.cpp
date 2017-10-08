@@ -28,5 +28,5 @@ Position Pieces::getPosition()
 
 Position* Pieces::safeSquares()
 {
-	return ;
+	return nullptr;
 }
