@@ -6,7 +6,8 @@ class Bishop :
 public:
 	bool debugMode;
 	string pieceName = "Bishop";
-	Bishop(bool debug);
+
+	Bishop(bool debug, Player parent);
 	~Bishop();
 };
 

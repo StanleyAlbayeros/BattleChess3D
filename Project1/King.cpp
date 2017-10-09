@@ -1,10 +1,11 @@
 #include "King.h"
 
-King::King(bool debug)
+King::King(bool debug, Player parent)
 {
+	this->parent = parent;
 	this->debugMode = debug;
 	if (debugMode) {
-		cout << "King created!" << endl;
+		cout << pieceName << " created!" << endl;
 	}
 }
 

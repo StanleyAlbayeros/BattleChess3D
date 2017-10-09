@@ -5,9 +5,9 @@ class Pawn :
 {
 public:
 	bool debugMode;
-	string pieceName;
+	string pieceName = "Pawn";
 
-	Pawn(bool debug);
+	Pawn(bool debug, Player parent, Position pos);
 	~Pawn();
 };
 

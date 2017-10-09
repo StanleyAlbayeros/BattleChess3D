@@ -5,9 +5,9 @@ class Queen :
 {
 public:
 	bool debugMode;
-	string pieceName;
+	string pieceName = "Queen";
 
-	Queen(bool debug);
+	Queen(bool debug, Player parent);
 	~Queen();
 };
 

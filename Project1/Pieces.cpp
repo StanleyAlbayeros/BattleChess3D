@@ -2,10 +2,14 @@
 
 
 
+Pieces::Pieces(bool debug, Player parent)
+{
+	this->debugMode = debug;
+	this->parent = parent;
+}
+
 Pieces::Pieces()
 {
-	Position position;
-	playerID = 0;
 }
 
 

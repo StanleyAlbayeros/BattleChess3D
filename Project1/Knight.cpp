@@ -1,10 +1,11 @@
 #include "Knight.h"
 
-Knight::Knight(bool debug)
+Knight::Knight(bool debug, Player parent)
 {
+	this->parent = parent;
 	this->debugMode = debug;
 	if (debugMode) {
-		cout << "Knight created!" << endl;
+		cout << pieceName << " created!" << endl;
 	}
 }
 

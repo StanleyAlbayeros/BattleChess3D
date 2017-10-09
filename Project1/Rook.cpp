@@ -1,10 +1,11 @@
 #include "Rook.h"
 
-Rook::Rook(bool debug)
+Rook::Rook(bool debug, Player parent)
 {
+	this->parent = parent;
 	this->debugMode = debug;
 	if (debugMode) {
-		cout << "Rook created!" << endl;
+		cout << pieceName << " created!" << endl;
 	}
 }
 

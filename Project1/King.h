@@ -5,8 +5,9 @@ class King :
 {
 public:
 	bool debugMode;
-	string pieceName;
-	King(bool debug);
+	string pieceName = "King";
+
+	King(bool debug, Player parent);
 	~King();
 };
 

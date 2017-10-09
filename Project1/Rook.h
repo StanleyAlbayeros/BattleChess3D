@@ -5,9 +5,9 @@ class Rook :
 {
 public:
 	bool debugMode;
-	string pieceName;
+	string pieceName = "Rook";
 
-	Rook(bool debug);
+	Rook(bool debug, Player parent);
 	~Rook();
 };
 

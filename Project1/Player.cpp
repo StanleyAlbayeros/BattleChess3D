@@ -6,8 +6,14 @@ Player::Player(bool debug, int ID)
 {
 	this->debugMode = debug;
 	this->playerID = ID;
-	cout << "Player " << playerID << " created!" << endl;
+	if (debug) {
+		cout << "|__Player " << playerID << " created!" << endl;
+	}
 	gamesWon = 0;
+}
+
+int Player::getPlayerID() {
+	return playerID;
 }
 
 

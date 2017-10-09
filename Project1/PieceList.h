@@ -1,5 +1,6 @@
 #pragma once
 #include "Pieces.h"
+#include "Pawn.h"
 #include "Player.h"
 class PieceList
 {
@@ -9,5 +10,5 @@ public:
 	PieceList(Player parent, bool debug);
 	PieceList();
 	~PieceList();
-	Pieces pieceList[16];
+	Pieces pieces[16];
 };

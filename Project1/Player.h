@@ -8,10 +8,14 @@ using namespace std;
 class Player
 {
 public:
-	bool debugMode;
 	Player(bool debug, int ID);
 	Player();
 	~Player();
+	int Player::getPlayerID();
+
+private:
+
+	bool debugMode;
 	int gamesWon;
 	bool playerMode; //false IA, true human
 	int playerID;

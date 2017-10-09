@@ -1,18 +1,26 @@
 #pragma once
 #include "Position.h"
+#include "Player.h"
 
+
+//TODO  abstract class
 class Pieces
 {
 public:
+	Pieces(bool debug, Player parent);
 	Pieces();
 	~Pieces();
-	int playerID;
-	Position validMoves();
+	virtual Position validMoves();
+	virtual Position* safeSquares();
 	Position getPosition();
-	bool hasMoved;
-	Position* safeSquares();
+
+	//not private so the subclasses can access it
+protected:
+	Player parent;
+	bool debugMode;
+	Position position;
 
 private:
-	Position position;
+	bool hasMoved;
 
 };
