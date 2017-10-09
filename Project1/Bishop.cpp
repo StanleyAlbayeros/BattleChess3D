@@ -4,7 +4,7 @@ Bishop::Bishop(bool debug)
 {
 	this->debugMode = debug;
 	if (debugMode) {
-		cout << "Bishop created!" << endl;
+		cout << pieceName <<  " created!" << endl;
 	}
 }
 

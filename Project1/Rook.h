@@ -5,6 +5,8 @@ class Rook :
 {
 public:
 	bool debugMode;
+	string pieceName;
+
 	Rook(bool debug);
 	~Rook();
 };

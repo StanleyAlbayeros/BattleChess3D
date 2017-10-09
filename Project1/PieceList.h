@@ -1,11 +1,12 @@
 #pragma once
 #include "Pieces.h"
 #include "Player.h"
-class PieceList :
-	public Pieces
+class PieceList
 {
 public:
-	PieceList(Player parent);
+	bool debugMode;
+
+	PieceList(Player parent, bool debug);
 	PieceList();
 	~PieceList();
 	Pieces pieceList[16];

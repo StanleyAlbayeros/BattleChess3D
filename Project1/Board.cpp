@@ -1,7 +1,7 @@
 #include "Board.h"
 
 
-Board::Board(bool debug)
+Board::Board(Player player1, Player player2, bool debug)
 {
 	this->debugMode = debug;
 	if (debugMode) {

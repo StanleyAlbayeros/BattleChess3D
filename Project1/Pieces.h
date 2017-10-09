@@ -7,7 +7,6 @@ public:
 	Pieces();
 	~Pieces();
 	int playerID;
-	string pieceName;
 	Position validMoves();
 	Position getPosition();
 	bool hasMoved;

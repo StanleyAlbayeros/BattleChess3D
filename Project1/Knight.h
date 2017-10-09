@@ -5,6 +5,7 @@ class Knight :
 {
 public:
 	bool debugMode;
+	string pieceName;
 	Knight(bool debug);
 	~Knight();
 };

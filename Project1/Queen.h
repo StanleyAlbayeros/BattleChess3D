@@ -5,6 +5,8 @@ class Queen :
 {
 public:
 	bool debugMode;
+	string pieceName;
+
 	Queen(bool debug);
 	~Queen();
 };

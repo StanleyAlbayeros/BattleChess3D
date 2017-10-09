@@ -5,6 +5,8 @@ class Pawn :
 {
 public:
 	bool debugMode;
+	string pieceName;
+
 	Pawn(bool debug);
 	~Pawn();
 };

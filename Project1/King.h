@@ -5,6 +5,7 @@ class King :
 {
 public:
 	bool debugMode;
+	string pieceName;
 	King(bool debug);
 	~King();
 };
