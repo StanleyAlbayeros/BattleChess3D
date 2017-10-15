@@ -2,6 +2,7 @@
 #include "Pieces.h"
 #include "Pawn.h"
 #include "Player.h"
+#include "Position.h"
 class PieceList
 {
 public:

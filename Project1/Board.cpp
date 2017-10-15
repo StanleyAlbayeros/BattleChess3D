@@ -30,6 +30,11 @@ Board::Board(Player player1, Player player2, bool debug)
 	}
 }
 
+Position Board::getPosition(int row, int column)
+{
+	return checkBoard[row][column];
+}
+
 
 Board::~Board()
 {
