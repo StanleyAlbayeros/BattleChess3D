@@ -7,7 +7,7 @@ public:
 	bool debugMode;
 	string pieceName = "King";
 
-	King(bool debug, Player parent);
+	King(bool debug);
 	~King();
 };
 

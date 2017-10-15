@@ -2,10 +2,9 @@
 
 
 
-Pieces::Pieces(bool debug, Player parent)
+Pieces::Pieces(bool debug)
 {
 	this->debugMode = debug;
-	this->parent = parent;
 }
 
 Pieces::Pieces()

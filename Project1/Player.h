@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include "PieceList.h"
 
 using namespace std;
 
@@ -19,5 +20,6 @@ private:
 	int gamesWon;
 	bool playerMode; //false IA, true human
 	int playerID;
+	PieceList pieceList;
 };
 

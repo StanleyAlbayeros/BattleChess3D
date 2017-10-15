@@ -1,8 +1,7 @@
 #include "Queen.h"
 
-Queen::Queen(bool debug, Player parent)
+Queen::Queen(bool debug)
 {
-	this->parent = parent;
 	this->debugMode = debug;
 	if (debugMode) {
 		cout << pieceName << " created!" << endl;

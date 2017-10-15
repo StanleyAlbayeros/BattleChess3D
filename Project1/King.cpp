@@ -1,8 +1,7 @@
 #include "King.h"
 
-King::King(bool debug, Player parent)
+King::King(bool debug)
 {
-	this->parent = parent;
 	this->debugMode = debug;
 	if (debugMode) {
 		cout << pieceName << " created!" << endl;

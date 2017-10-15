@@ -1,13 +1,12 @@
 #include "Pawn.h"
 
 
-Pawn::Pawn(bool debug, Player parent, Position pos)
+Pawn::Pawn(bool debug, Position pos)
 {
-	this->parent = parent;
 	this->debugMode = debug;
 	this->position = pos;
 	if (debugMode) {
-		cout << "   |__"<<  pieceName << " for player " << parent.getPlayerID() << " in (" << position.getRow() << "," << position.getColumn() << ") created!" << endl;
+		cout << "   |__"<<  pieceName << " in (" << position.getRow() << "," << position.getColumn() << ") created!" << endl;
 	}
 }
 
