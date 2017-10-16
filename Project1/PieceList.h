@@ -21,4 +21,7 @@ public:
 	PieceList();
 	~PieceList();
 	Pieces pieces[16];
+	string getListID();
+private:
+	int playerID;
 };

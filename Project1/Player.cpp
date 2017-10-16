@@ -36,6 +36,11 @@ int Player::getPlayerID() {
 	return playerID;
 }
 
+string Player::getListID()
+{
+	return pieceList.getListID();
+}
+
 
 Player::Player()
 {

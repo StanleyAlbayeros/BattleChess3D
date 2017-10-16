@@ -10,10 +10,10 @@ PieceList::PieceList(bool debug, Board& board, int playerNumber)
 	}
 
 	//TODO fill out piece instantiation
-
-	int playerHomeRow = 0 + (playerNumber * 7);
+	playerID = playerNumber;
+	int playerHomeRow = 0 + (playerID * 7);
 	int playerPawnRow = 1;
-	if (playerNumber == 1) {
+	if (playerID == 1) {
 		playerPawnRow = 6;
 	}
 
@@ -56,4 +56,30 @@ PieceList::PieceList()
 }
 PieceList::~PieceList()
 {
+}
+
+string PieceList::getListID()
+{
+	string list = "";
+	if (playerID == 1) {
+		for (int i = 15; i >= 0; i--) {
+			list += pieces[i].getID();
+			list += " ";
+			if (i == 8) {
+				list += "\n";
+			}
+		}
+	}
+	else {
+		for (int i = 0; i < 16; i++) {
+			list += pieces[i].getID();
+			list += " ";
+			if (i == 7) {
+				list += "\n";
+			}
+		}
+	}
+	list += "\n";
+
+	return list;
 }

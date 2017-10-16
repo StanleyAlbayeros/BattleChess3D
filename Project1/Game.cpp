@@ -14,6 +14,8 @@ Game::Game(bool debug, Board board)
 	if (debugMode) {
 		cout << "Game created!" << endl;
 	}
+	boardStateToConsole();
+
 }
 
 
@@ -31,4 +33,16 @@ Player Game::getPlayer(int playerNumber)
 		playerNumberExcep = "You tried to call getPlayer with playerNumber " + to_string(playerNumber) + " !";
 		throw playerNumberExcep;
 	}
+}
+
+void Game::boardStateToConsole() {
+
+	cout << "________________" << endl;
+	cout << players[0].getListID();
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << players[1].getListID();
+	cout << "________________" << endl;
 }

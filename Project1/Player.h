@@ -14,6 +14,8 @@ public:
 	Player();
 	~Player();
 	int Player::getPlayerID();
+	string getListID();
+	PieceList pieceList;
 
 private:
 
@@ -21,6 +23,5 @@ private:
 	int gamesWon;
 	bool playerMode; //false IA, true human
 	int playerID;
-	PieceList pieceList;
 };
 

@@ -21,6 +21,7 @@ public:
 	bool gameStatus = false; //False: in progress, True: completed
 	int playerCheckedStatus[2]; //Posiciones 0= player 1, 1= player 2. Valores 0=no, 1= yes
 
+	void boardStateToConsole();
 
 	void startGame();
 

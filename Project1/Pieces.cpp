@@ -59,6 +59,11 @@ string Pieces::getName() {
 	return a;
 }
 
+string Pieces::getID()
+{
+	return pieceID;
+}
+
 Position* Pieces::safeSquares()
 {
 	return nullptr;

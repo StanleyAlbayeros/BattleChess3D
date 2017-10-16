@@ -18,6 +18,7 @@ public:
 	string statusToNotation();
 	Position getPosition();
 	string getName();
+	string getID();
 
 	//not private so the subclasses can access it
 protected:
