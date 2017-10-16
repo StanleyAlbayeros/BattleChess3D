@@ -1,7 +1,7 @@
 #include "Game.h"
 
 
-Game::Game(bool debug)
+Game::Game(bool debug, Board board)
 {
 	this->debugMode = debug;
 	if (debugMode) {
@@ -9,7 +9,7 @@ Game::Game(bool debug)
 	}
 
 	for (int i = 0; i < 2; i++) {
-		this->players[i] = Player(debug, i);
+		this->players[i] = Player(debug, i, board);
 	}
 	if (debugMode) {
 		cout << "Game created!" << endl;

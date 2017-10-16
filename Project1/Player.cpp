@@ -2,7 +2,7 @@
 
 
 
-Player::Player(bool debug, int ID)
+Player::Player(bool debug, int ID, Board& board)
 {
 	this->debugMode = debug;
 	this->playerID = ID;
@@ -11,16 +11,23 @@ Player::Player(bool debug, int ID)
 	}
 	gamesWon = 0;
 
+	if ((&board != NULL) && (debugMode)) {
+		cout << "Board exists and is in player " << playerID << "'s hands!" << endl;
+		cout << board.getPosition(1, 2).toString() << endl;
+	}
 
 	if (debugMode) {
 		cout << "Creating PieceLists!" << endl;
 	}
 
-	this->pieceList = PieceList(debug);
+	this->pieceList = PieceList(debug,board, playerID);
 
 	if (debugMode) {
-		cout << "PieceLists created!" << endl;
+		cout << "PieceLists created! " ;
+		cout << " Player " << playerID << " pieceList: " << pieceList.toString() << endl;
 	}
+
+
 
 
 }

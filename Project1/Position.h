@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 class Position
@@ -11,10 +12,12 @@ public:
 	~Position();
 	int getRow();
 	int getColumn();
+	string Position::toString();
 
 private:
 	bool debugMode;
 	int row;
 	int column;
+	string columnLetter;
 };
 

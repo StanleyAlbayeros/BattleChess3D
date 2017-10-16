@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "PieceList.h"
+#include "Board.h"
 
 using namespace std;
 
@@ -9,7 +10,7 @@ using namespace std;
 class Player
 {
 public:
-	Player(bool debug, int ID);
+	Player(bool debug, int ID, Board& board);
 	Player();
 	~Player();
 	int Player::getPlayerID();

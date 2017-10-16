@@ -2,6 +2,7 @@
 #include "Move.h"
 #include "Player.h"
 #include "Position.h"
+#include "Board.h"
 #include <iostream>
 
 using namespace std;
@@ -9,7 +10,7 @@ using namespace std;
 class Game
 {
 public:
-	Game(bool debug);
+	Game(bool debug, Board board);
 	~Game();
 	Player players[2];
 

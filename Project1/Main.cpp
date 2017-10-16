@@ -6,7 +6,7 @@
 
 int main() {
 	Board b(true); 
-	Game g(true);
+	Game g(true, b);
 	using namespace std;
 	cout << "created game and board, and I didn't die!" << endl;
 	system("PAUSE");

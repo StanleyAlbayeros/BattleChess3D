@@ -1,13 +1,16 @@
 #pragma once
 #include "Pieces.h"
+
 class Queen :
 	public Pieces
 {
 public:
 	bool debugMode;
-	string pieceName = "Queen";
-
-	Queen(bool debug);
+	Queen(bool debug, Position pos);
 	~Queen();
+
+private:
+	string pieceName = "Queen";
+	string pieceID = "Q";
 };
 

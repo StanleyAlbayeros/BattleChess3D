@@ -1,12 +1,11 @@
 #include "Pawn.h"
 
-
-Pawn::Pawn(bool debug, Position pos)
+Pawn::Pawn(bool debug, Position pos) : Pieces(debug, "Pawn", "P")
 {
 	this->debugMode = debug;
 	this->position = pos;
 	if (debugMode) {
-		cout << "   |__"<<  pieceName << " in (" << position.getRow() << "," << position.getColumn() << ") created!" << endl;
+		cout << "   |__"<<  pieceName << " in " << position.toString() << " created!" << endl;
 	}
 }
 

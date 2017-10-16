@@ -1,10 +1,11 @@
 #include "Bishop.h"
 
-Bishop::Bishop(bool debug)
+Bishop::Bishop(bool debug, Position pos) : Pieces(debug, "Bishop", "B")
 {
 	this->debugMode = debug;
+	this->position = pos;
 	if (debugMode) {
-		cout << pieceName <<  " created!" << endl;
+		cout << "   |__" << pieceName << " in " << position.toString() << " created!" << endl;
 	}
 }
 

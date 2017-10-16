@@ -1,13 +1,16 @@
-#include "Pieces.h"
 #pragma once
+#include "Pieces.h"
+
 class Knight :
 	public Pieces
 {
 public:
 	bool debugMode;
-	string pieceName = "Knight";
-
-	Knight(bool debug);
+	Knight(bool debug, Position pos);
 	~Knight();
+
+private:
+	string pieceName = "Knight";
+	string pieceID = "N";
 };
 

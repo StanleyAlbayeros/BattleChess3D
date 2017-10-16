@@ -1,10 +1,11 @@
 #include "Queen.h"
 
-Queen::Queen(bool debug)
+Queen::Queen(bool debug, Position pos) : Pieces(debug, "Queen", "Q")
 {
 	this->debugMode = debug;
+	this->position = pos;
 	if (debugMode) {
-		cout << pieceName << " created!" << endl;
+		cout << "   |__" << pieceName << " in " << position.toString() << " created!" << endl;
 	}
 }
 
