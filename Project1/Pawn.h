@@ -11,6 +11,6 @@ public:
 
 private:
 	string pieceName = "Pawn";
-	string pieceID = "P";
+	//string pieceID = "P";
 };
 

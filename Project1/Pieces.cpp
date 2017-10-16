@@ -14,6 +14,18 @@ Pieces::Pieces(bool debug, string name, string id)
 	this->pieceID = id;
 }
 
+Pieces::Pieces(bool debug, Position pos, string name, string id)
+{
+	this->debugMode = debug;
+	this->pieceName = name;
+	this->pieceID = id;
+	this->position = pos;
+	if (debugMode) {
+		cout << "   |__" << pieceName << " in " << position.toString() << " created!" << endl;
+	}
+
+}
+
 Pieces::Pieces()
 {
 }

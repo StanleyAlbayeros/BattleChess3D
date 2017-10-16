@@ -9,6 +9,7 @@ class Pieces
 public:
 	Pieces(bool debug);
 	Pieces(bool debug, string name, string id);
+	Pieces(bool debug, Position pos, string name, string id);
 	//makePiece();
 	Pieces();
 	~Pieces();
@@ -22,8 +23,8 @@ public:
 protected:
 	bool debugMode;
 	Position position;
-	string pieceName;
-	string pieceID;
+	string pieceName  = "BASE";
+	string pieceID = "BASE" ;
 
 private:
 	bool hasMoved;
